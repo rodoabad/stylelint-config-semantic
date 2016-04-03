@@ -2,6 +2,10 @@
   "name": "stylelint-config-semantic",
   "description": "Semantic rules for your CSS",
   "main": "index.js",
+  "files": [
+    "lib",
+    "index.js"
+  ],
   "keywords": [
     "stylelint",
     "config",
@@ -9,15 +13,6 @@
     "postcss",
     "css"
   ],
-  "scripts": {
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "stylelint ./test/**/*.scss"
-  },
-  "config": {
-    "ghooks": {
-      "commit-msg": "validate-commit-msg"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rodoabad/stylelint-config-semantic.git"
@@ -28,10 +23,19 @@
     "url": "https://github.com/rodoabad/stylelint-config-semantic/issues"
   },
   "homepage": "https://github.com/rodoabad/stylelint-config-semantic#readme",
+  "config": {
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    }
+  },
   "devDependencies": {
     "ghooks": "^1.1.1",
     "semantic-release": "^4.3.5",
     "stylelint": "^5.2.1",
     "validate-commit-msg": "^2.5.0"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "stylelint ./test/**/*.scss"
   }
 }
