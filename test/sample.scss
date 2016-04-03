@@ -1,0 +1,80 @@
+:root {
+    --foo-bar: 1rem;
+}
+
+.moo {
+    color: white;
+    background: #ffa;
+
+    top: calc(1rem + 2rem);
+    bottom: 1rem;
+
+    font-family: 'Times New Roman', 'Times', serif;
+    font-weight: bold;
+    line-height: 0.5;
+
+    transform: translate(1, 1) scale(3);
+}
+
+.moo:hover {
+    background: url('foo.jpg');
+    transform: translate(
+            1,
+            1
+    );
+}
+
+.foo {
+
+    background-size: 0, 0;
+
+    top: 1.25rem;
+    bottom: 0;
+
+    display: flex;
+
+}
+
+.bar {
+
+    content: 'foo bar';
+    transition: background-color 500ms linear;
+}
+
+.container {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+@media screen and (color), projection and(color) {
+
+    .ba,
+    .bb {
+        color: pink;
+    }
+}
+
+@media {
+
+    .ba,
+    .bb {
+        color: pink;
+    }
+}
+
+.alpha {
+    color: black;
+    background: red;
+}
