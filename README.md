@@ -31,7 +31,7 @@ To override the rules set by `stylelint-config-semantic` you need to define your
     "stylelint-config-semantic"
   ],
   "rules": {
-        "indentation": 2
+    "indentation": 2
   }
 }
 ```
