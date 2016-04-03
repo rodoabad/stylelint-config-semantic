@@ -13,7 +13,9 @@ You need to have `stylelint` and this config as part of your `devDependencies`.
 
 ## Usage
 
-Add `stylelint-config-semantic` to your `extends` property in `.stylelintrc`.
+### Load everything
+
+To use all the rules all at once add `stylelint-config-semantic` to your `extends` property in `.stylelintrc`.
 
 ```json
 {
@@ -22,6 +24,24 @@ Add `stylelint-config-semantic` to your `extends` property in `.stylelintrc`.
   ]
 }
 ```
+
+### Load a specific rule
+
+Each rule for `stylelint-config-semantic` can be loaded individually if you only want to load a specific rule. They are all located in the `lib` folder.
+
+Load the `color` and `general` rule set.
+
+```json
+{
+  "extends": [
+    "stylelint-config-semantic/lib/color",
+    "stylelint-config-semantic/lib/general"
+  ]
+}
+```
+
+
+### Override specific rules
 
 To override the rules set by `stylelint-config-semantic` you need to define your own rules and set them as you see fit.
 
