@@ -3,44 +3,50 @@
 }
 
 .moo {
-    color: white;
+
+    top: calc(1rem + 2rem);
+    bottom: 1rem;
+
+    transform: translate(1, 1) scale(3);
 
     background: #ffa;
+
+    color: white;
 
     font-family: 'Times New Roman', 'Times', serif;
     font-weight: bold;
 
     line-height: 0.5;
 
-    top: calc(1rem + 2rem);
-    bottom: 1rem;
-
-    transform: translate(1, 1) scale(3);
 }
 
 .moo:hover {
-    background: url('foo.jpg');
+
     transform: translate(
             1,
             1
     );
+
+    background: url('foo.jpg');
+
 }
 
 .foo {
 
-    background-size: 0, 0;
+    display: flex;
 
     top: 1.25rem;
     bottom: 0;
 
-    display: flex;
+    background-size: 0, 0;
 
 }
 
 .bar {
 
-    content: 'foo bar';
     transition: background-color 500ms linear;
+
+    content: 'foo bar';
 }
 
 .container {
@@ -77,7 +83,9 @@
 }
 
 .alpha {
-    color: black;
 
     background: red;
+
+    color: black;
+
 }
