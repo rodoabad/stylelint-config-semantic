@@ -25,6 +25,7 @@
   "homepage": "https://github.com/rodoabad/stylelint-config-semantic#readme",
   "config": {
     "ghooks": {
+      "pre-commit": "npm run test",
       "commit-msg": "validate-commit-msg"
     }
   },
