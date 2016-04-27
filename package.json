@@ -31,16 +31,16 @@
     }
   },
   "devDependencies": {
-    "ghooks": "^1.1.1",
+    "ghooks": "^1.2.1",
     "semantic-release": "^4.3.5",
-    "stylelint": "^5.2.1",
-    "validate-commit-msg": "^2.5.0"
+    "stylelint": "^6.2.2",
+    "validate-commit-msg": "^2.6.1"
   },
   "peerDependencies": {
-    "stylelint": "5.2.x"
+    "stylelint": "6.2.x"
   },
   "scripts": {
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "stylelint ./test/**/*.scss"
+    "test": "stylelint --syntax scss ./test/**/*.scss"
   }
 }
