@@ -30,6 +30,9 @@
       "commit-msg": "validate-commit-msg"
     }
   },
+  "engines": {
+    "node": ">=4.x"
+  },
   "devDependencies": {
     "ghooks": "^1.2.1",
     "semantic-release": "^4.3.5",
