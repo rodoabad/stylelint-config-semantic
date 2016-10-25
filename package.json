@@ -44,6 +44,6 @@
   },
   "scripts": {
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "stylelint --syntax scss ./test/**/*.scss"
+    "test": "stylelint --config ./.stylelintrc --syntax scss ./test/**/*.scss"
   }
 }
