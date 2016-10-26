@@ -36,11 +36,11 @@
   "devDependencies": {
     "ghooks": "^1.2.1",
     "semantic-release": "^4.3.5",
-    "stylelint": "^6.2.2",
+    "stylelint": "^7.5.0",
     "validate-commit-msg": "^2.6.1"
   },
   "peerDependencies": {
-    "stylelint": "6.2.x"
+    "stylelint": "7.5.x"
   },
   "scripts": {
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",

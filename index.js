@@ -19,7 +19,7 @@ const rootRuleRules = require('./lib/root-rule');
 const ruleRules = require('./lib/rule');
 const selectorRules = require('./lib/selector');
 const selectorListRules = require('./lib/selector-list');
-const shorthandRules = require('./lib/shorthand');
+const shorthandPropertyRules = require('./lib/shorthand-property');
 const stringRules = require('./lib/string');
 const timeRules = require('./lib/time');
 const unitRules = require('./lib/unit');
@@ -50,7 +50,7 @@ const rules = {
         ruleRules.rules,
         selectorRules.rules,
         selectorListRules.rules,
-        shorthandRules.rules,
+        shorthandPropertyRules.rules,
         stringRules.rules,
         timeRules.rules,
         unitRules.rules,

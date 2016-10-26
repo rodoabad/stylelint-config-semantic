@@ -1,0 +1,8 @@
+/* stylelint-disable custom-property-no-outside-root */
+/* for testing purposes */
+.custom-property-empty-line-before {
+    top: 10px;
+    --foo: pink;
+    --bar: red;
+}
+/* stylelint-enable custom-property-no-outside-root */
